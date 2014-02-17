@@ -11,6 +11,7 @@ public class InputController : MonoBehaviour {
 	public GameObject planeP1;
 	public GameObject planeP2;
 	public GameObject camera;
+	public GameObject Maze;
 	// Use this for initialization
 	void Start () { //Start with kinematic Leader Follower
 		disable (Follower1);
@@ -19,7 +20,8 @@ public class InputController : MonoBehaviour {
 		Leader.GetComponent <KinematicMouseController>().enabled 		= true;
 		Follower1.GetComponent <LeaderFollowerKinematic>().enabled  	= true;
 		Follower2.GetComponent <LeaderFollowerKinematic>().enabled  	= true;
-		camera.GetComponent <CameraController>().player = 		Leader;
+		Maze.SetActive(false);
+		camera.GetComponent <CameraController>().player 				= Leader;
 	}
 	
 	// Update is called once per frame
