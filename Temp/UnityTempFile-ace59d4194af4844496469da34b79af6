@@ -1,0 +1,84 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_GENERICS
+-define:ENABLE_SUBSTANCE
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:UNITY_4_3_3
+-define:UNITY_4_3
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_WIN
+Assets/Script/CameraController.cs
+Assets/Script/ChangeController/ChangeToCar.cs
+Assets/Script/ChangeController/ChangeToDifferential.cs
+Assets/Script/ChangeController/ChangeToDiscrite.cs
+Assets/Script/ChangeController/ChangeToDynamic.cs
+Assets/Script/ChangeController/ChangeToKinematic.cs
+Assets/Script/ChangeLevel.cs
+Assets/Script/Controller/CarMouseController.cs
+Assets/Script/Controller/DifferentialMouseController.cs
+Assets/Script/Controller/DifferentialPlayerController.cs
+Assets/Script/Controller/DiscreteMouseController.cs
+Assets/Script/Controller/DynamicMouseController.cs
+Assets/Script/Controller/KinematicMouseController.cs
+Assets/Script/DirectionUtility.cs
+Assets/Script/InputController.cs
+Assets/Script/MouseCarController.cs
+"Assets/Script/Script Enri/DifferentialLeaderFollower.cs"
+"Assets/Script/Script Enri/DifferentialPlayerControllerBOX.cs"
+"Assets/Script/Script Enri/LeaderFollowerKinematic.cs"
+"Assets/Script/Script Enri/MazeGenerator.cs"
+"Assets/Script/Script Enri/MouseKinematicPlayerControllerEnri.cs"
+"Assets/Script/Script Enri/NearestNeighbourKinematic.cs"
+"Assets/Script/Script Enri/PID.cs"
+Assets/Script/UnityRandom-master/ExampleFiles/ExampleUnityRandom.cs
+Assets/Script/UnityRandom-master/ExampleFiles/RotateAround.cs
+Assets/Script/UnityRandom-master/UnityRandom.cs
+Assets/Script/UnityRandom-master/lib/DiceRoll.cs
+Assets/Script/UnityRandom-master/lib/ExponentialDistribution.cs
+Assets/Script/UnityRandom-master/lib/GammaDistribution.cs
+Assets/Script/UnityRandom-master/lib/MersenneTwister.cs
+Assets/Script/UnityRandom-master/lib/NormalDistribution.cs
+Assets/Script/UnityRandom-master/lib/PoissonDistribution.cs
+Assets/Script/UnityRandom-master/lib/PowerLaw.cs
+Assets/Script/UnityRandom-master/lib/RandomCube.cs
+Assets/Script/UnityRandom-master/lib/RandomDisk.cs
+Assets/Script/UnityRandom-master/lib/RandomSphere.cs
+Assets/Script/UnityRandom-master/lib/RandomSquare.cs
+Assets/Script/UnityRandom-master/lib/ShuffleBagCollection.cs
+Assets/Script/UnityRandom-master/lib/SpecialFunctions.cs
+Assets/Script/UnityRandom-master/lib/WaveToRgb.cs
+Assets/Script/rrTree.cs
+Assets/Script/rrtAlgorithm.cs
+Assets/Script/rrtNode.cs
+Assets/Script/testRRT.cs
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Xml.Linq.dll"
