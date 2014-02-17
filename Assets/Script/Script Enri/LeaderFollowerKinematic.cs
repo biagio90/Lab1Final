@@ -15,6 +15,7 @@ public class LeaderFollowerKinematic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		transform.rotation = Quaternion.identity;
 		if (Time.time > nextMove) {
 			nextMove = Time.time + timeNext;
 			if (Vector3.Distance (transform.position, IL_leader.transform.position) < distance) {
@@ -26,7 +27,7 @@ public class LeaderFollowerKinematic : MonoBehaviour {
 						//mover.position = Vector3. MoveTowards(mover.transform.position, destination, Time.deltaTime * 10);
 						Vector3 direction = (IL_leader.transform.position - transform.position).normalized;
 						rigidbody.velocity = direction * speed;
-						Debug.Log ("Direction: " + direction);
+						//Debug.Log ("Direction: " + direction);
 				}
 		}
 		//Debug.DrawLine(transform.position, IL_leader.transform.position, Color.red, 5,false);
