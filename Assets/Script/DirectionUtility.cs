@@ -25,8 +25,8 @@ public class DirectionUtility
 		rigidbody.velocity = direction * speed;
 	}
 	
-	public static void makeDynamicMove (Rigidbody rigidbody, Vector3 direction, float distance, float speed){
-		rigidbody.AddForce( distance * direction * speed * 100.0f * Time.deltaTime );
+	public static void makeDynamicMove (Rigidbody rigidbody, PID pid, Vector3 origin, Vector3 dest){
+		rigidbody.AddForce( pid.regulation(origin, dest) );
 	}
 
 	public static void makeDifferentialMove (Transform transform, Rigidbody rigidbody, Vector3 destination, float speed, float turnSpeed){

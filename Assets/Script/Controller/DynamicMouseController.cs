@@ -5,6 +5,7 @@ public class DynamicMouseController : MonoBehaviour {
 	
 	public float speed = 10;
 
+	private PID pid = new PID (1,0,100);
 	private Vector3 destination = Vector3.zero;
 	private bool go = false;
 
@@ -25,14 +26,15 @@ public class DynamicMouseController : MonoBehaviour {
 		
 		if (go) {
 			float d = Vector3.Distance(transform.position, destination);
-			Debug.Log("Distance: "+destination);
+			DirectionUtility.makeDynamicMove (rigidbody, pid, transform.position, destination);
+			/*Debug.Log("Distance: "+destination);
 			if (d > 0.5) {
 				Vector3 direction = (destination - transform.position).normalized;
 				DirectionUtility.makeDynamicMove (rigidbody, direction, d, speed);
 			} else {
 				transform.position = destination;
 				rigidbody.AddForce(Vector3.zero);
-			}
+			}*/
 		}
 	}
 }
